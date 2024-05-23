@@ -5,14 +5,16 @@ import { Button } from "../../Button";
 
 export function SearchBar({className ,children ,setIsSearchClicked,setSearchActive}) {
 
-const closeBtn = () => {
-    setSearchActive("hidden")
-    setIsSearchClicked(false)
+const closeBtn = (e) => {
+  console.log(e.target.className)
+  setSearchActive("close hidden")
+  setIsSearchClicked(false)
+
   }
 
   return (
     <Component className={className}>
-      <Button className='close-btn' onClick={closeBtn}>[x]</Button>
+      <Button className='close-btn' onClick={(e)=>closeBtn(e)}>[x]</Button>
       <div>
         <Input />
         <Button className='search-btn'>buscar</Button>

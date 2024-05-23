@@ -6,12 +6,11 @@ export const Component = styled.div`
     height: 100vh;
     width: 100%;
     display: flex;
-    position: absolute;
+    position: fixed;
     z-index: 999;
     top: 0;
 
     background-color: #2f4558f7;
-
     div{
 
         margin: 40px auto;
@@ -19,10 +18,7 @@ export const Component = styled.div`
         align-items:baseline;
         justify-content: center;
         gap: 2px;
-        position: fixed; 
-        right: 0;
-        left: 0;
-        overflow: hidden;
+    
     }
 
     input {

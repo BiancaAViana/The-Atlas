@@ -2,12 +2,13 @@ import styled from "styled-components";
 
 export const Component = styled.header`
   height: 80px;
+  width: 100%;
+  top: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  position: relative;
-
+  position: fixed;
+  z-index: 1;
   background-color: #2f4558;
 
   .hidden {
